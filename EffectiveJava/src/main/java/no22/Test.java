@@ -10,6 +10,7 @@ public class Test {
     public static final String CONST_TEST = "const test";
     public static final String CONST_TEST1 = "const test1";
     public static final String CONST_TEST2 = "const test1";
+    
 }
 
 
