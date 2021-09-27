@@ -7,7 +7,10 @@ import java.util.List;
  * @since Created in 2021/9/26 10:40 下午
  */
 public class Test {
-    private Test() {};
+    private Test() {
+    }
+
+    ;
 
     public static final String CONST_TEST = "const test";
     public static final String CONST_TEST1 = "const test1";
@@ -15,6 +18,10 @@ public class Test {
 
     // will warn
     // List<String>[] s = new List<String>[1];
+
+    Object a = new Object();
+    String s = (String)a;
+
 }
 
 
