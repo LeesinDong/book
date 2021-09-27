@@ -30,6 +30,7 @@ public class Stack<E> {
             throw new RuntimeException();
         }
 
+
         E result = elements[--size];
         elements[size] = null;
         return result;
