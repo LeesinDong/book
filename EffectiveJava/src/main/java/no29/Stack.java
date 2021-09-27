@@ -36,6 +36,7 @@ public class Stack<E> {
         return result;
     }
 
+
     public boolean isEmpty() {
         return size == 0;
     }
