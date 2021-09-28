@@ -39,6 +39,7 @@ public class Test {
         return null;
     }
 
+
     public static Object getList(List<? extends Object> list){
         return list;
     }
