@@ -13,6 +13,13 @@ public class Stack<E> {
     private int size = 0;
     private static final int DEFAULT_CAPACITY = 16;
 
+    public void pushAll(Iterable<E> iterable) {
+    // public void pushAll(Iterable<E> iterable) {
+        for (E e : iterable) {
+            push(e);
+        }
+    }
+
     @SuppressWarnings("unchecked")
     public Stack(){
         elements = (E[]) new Object[DEFAULT_CAPACITY];
@@ -29,7 +36,6 @@ public class Stack<E> {
         if (size == 0) {
             throw new RuntimeException();
         }
-
 
         E result = elements[--size];
         elements[size] = null;
@@ -50,6 +56,33 @@ public class Stack<E> {
             while (!stack.isEmpty()) {
                 System.out.println(stack.pop().toString());
             }
+        }
+    }
+
+    static class Original {
+        private Object[] elements;
+        private int size = 0;
+        private static final int DEFAULT_CAPACITY = 16;
+
+        public Original(){
+            elements = (Object[]) new Object[DEFAULT_CAPACITY];
+        }
+
+        public void push(Object e) {
+            if (elements.length == size) {
+                elements = Arrays.copyOf(elements, 2 * size + 1);
+            }
+            elements[size++] = e;
+        }
+
+        public Object pop() {
+            if (size == 0) {
+                throw new RuntimeException();
+            }
+
+            Object result = elements[--size];
+            elements[size] = null;
+            return result;
         }
     }
 }
