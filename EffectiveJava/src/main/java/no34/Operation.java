@@ -1,5 +1,7 @@
 package no34;
 
+import java.util.List;
+
 /**
  * @author Leesin Dong
  * @since Created in 2021/9/28 10:36 下午
@@ -31,6 +33,14 @@ public enum Operation {
         },;
 
         public abstract double apply(double x, double y);
+
+    }
+
+    public <E> void test(List<E> list) {
+
+    }
+
+    public void test1(List<?> list) {
 
     }
 }
