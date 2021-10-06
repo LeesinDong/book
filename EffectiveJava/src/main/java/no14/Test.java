@@ -36,6 +36,7 @@ public class Test implements Comparable<Test> {
 
     Comparator<Test> test = (o1, o2) -> Integer.compare(o1.a, o2.a);
 
+
     // public static void main(String[] args) {
         // IntStream.range(1, 3).forEach(Comparator.comparing());
     // }
