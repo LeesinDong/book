@@ -1,7 +1,5 @@
 package no29;
 
-import com.sun.xml.internal.fastinfoset.algorithm.BooleanEncodingAlgorithm;
-
 import java.util.Arrays;
 
 /**
@@ -56,6 +54,45 @@ public class Stack<E> {
             while (!stack.isEmpty()) {
                 System.out.println(stack.pop().toString());
             }
+        }
+    }
+
+    private static class Stack2<E> {
+        private Object[] elements;
+        private int size = 0;
+        private static final int DEFAULT_CAPACITY = 16;
+
+        public void pushAll(Iterable<E> iterable) {
+            // public void pushAll(Iterable<E> iterable) {
+            for (E e : iterable) {
+                push(e);
+            }
+        }
+
+        public Stack2(){
+            elements = new Object[DEFAULT_CAPACITY];
+        }
+
+        public void push(E e) {
+            if (elements.length == size) {
+                elements = Arrays.copyOf(elements, 2 * size + 1);
+            }
+            elements[size++] = e;
+        }
+
+        public E pop() {
+            if (size == 0) {
+                throw new RuntimeException();
+            }
+
+            @SuppressWarnings("unchecked")
+            E result = (E) elements[--size];
+            elements[size] = null;
+            return result;
+        }
+
+        public boolean isEmpty() {
+            return size == 0;
         }
     }
 
