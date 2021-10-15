@@ -12,6 +12,8 @@
         <module>EffectiveJava</module>
         <module>阿里巴巴java开发手册</module>
         <module>CleanCode</module>
+        <module>untitled</module>
+        <module>Java8实战第2版</module>
     </modules>
 
     <properties>

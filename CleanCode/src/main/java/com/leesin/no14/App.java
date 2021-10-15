@@ -8,7 +8,7 @@ import org.junit.Test;
  */
 public class App {
 
-    @Test
+    @Test(timeout = 1000)
     public void test() {
         //正例：-l true -p 9999 -d D:\workspace\examples\clean-code-example\log
         //反例：-l t -p string -d D:\workspace\examples\clean-code-example\log
@@ -20,8 +20,7 @@ public class App {
             int port = arg.getInt('p');
             String directory = arg.getString('d');
             executeApplication(logging, port, directory);
-        } catch (Exception e) {
-            System.out.printf("Argument error: %s\n", e.getMessage());
+        } catch (Exception e) { System.out.printf("Argument error: %s\n", e.getMessage());
         }
     }
 
