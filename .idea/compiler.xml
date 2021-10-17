@@ -13,8 +13,6 @@
         <module name="CleanCode" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="untitled" target="8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="9" />
   </component>
 </project>
