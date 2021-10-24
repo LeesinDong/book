@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/深入理解java虚拟机第三版/深入理解java虚拟机第三版.iml" filepath="$PROJECT_DIR$/深入理解java虚拟机第三版/深入理解java虚拟机第三版.iml" />
       <module fileurl="file://$PROJECT_DIR$/重构第一版/重构第一版.iml" filepath="$PROJECT_DIR$/重构第一版/重构第一版.iml" />
     </modules>
   </component>

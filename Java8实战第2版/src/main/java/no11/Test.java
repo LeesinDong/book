@@ -17,12 +17,19 @@ public class Test {
 
         Optional<Object> o1 = Optional.ofNullable(null);
         System.out.println(o1);
-
     }
 
     @Data
     @AllArgsConstructor
     private static class Apple {
         private String color;
+    }
+
+    private static Optional<Object> get() {
+        try {
+            return Optional.ofNullable(1);
+        } catch (Exception e) {
+            return Optional.empty();
+        }
     }
 }
