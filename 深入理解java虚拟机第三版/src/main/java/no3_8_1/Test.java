@@ -11,8 +11,8 @@ public class Test {
     // java -XX:+UseSerialGC -Xms20M -Xmx20M -Xmn10M -XX:SurvivorRatio=8 -XX:+PrintGCDetails test.java
 
     public static void main(String[] args) throws InterruptedException {
-        test();
-        Thread.sleep(8000);
+        // test();
+        Thread.sleep(1000000);
     }
 
     public static void test() {
