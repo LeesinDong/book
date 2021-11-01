@@ -1,0 +1,1330 @@
+2021-10-29 22:52:27
+Full thread dump OpenJDK 64-Bit Server VM (11.0.13+8-LTS mixed mode):
+
+Threads class SMR info:
+_java_thread_list=0x00007f88857619d0, length=204, elements={
+0x00007f888682b000, 0x00007f888602a800, 0x00007f888602f000, 0x00007f888603b800,
+0x00007f88858c4800, 0x00007f888603c800, 0x00007f888603d800, 0x00007f888590c800,
+0x00007f8886114800, 0x00007f88868d8000, 0x00007f88868d8800, 0x00007f88878f6800,
+0x00007f88878f7000, 0x00007f88878fb800, 0x00007f8885948800, 0x00007f88878fc800,
+0x00007f8885949000, 0x00007f888594a000, 0x00007f888594b000, 0x00007f8875823800,
+0x00007f8885944000, 0x00007f8885947800, 0x00007f888594c000, 0x00007f88868db800,
+0x00007f88868dc800, 0x00007f88878f8000, 0x00007f8875824800, 0x00007f88878f9000,
+0x00007f88878fa000, 0x00007f88868dd800, 0x00007f88868de800, 0x00007f88868df000,
+0x00007f888594c800, 0x00007f888594d800, 0x00007f888594e800, 0x00007f88878fa800,
+0x00007f88878ff800, 0x00007f8887900000, 0x00007f8887901000, 0x00007f8887902000,
+0x00007f8887903000, 0x00007f8875825800, 0x00007f88868e0000, 0x00007f8887903800,
+0x00007f8887904800, 0x00007f8887905800, 0x00007f8887906800, 0x00007f88868e1000,
+0x00007f88868e2000, 0x00007f88868e2800, 0x00007f88868e3800, 0x00007f88868e4800,
+0x00007f88868e5800, 0x00007f8875826800, 0x00007f8887907000, 0x00007f8887908000,
+0x00007f8885951800, 0x00007f8885952000, 0x00007f8885953000, 0x00007f88868e6000,
+0x00007f8885954000, 0x00007f88868e7000, 0x00007f8885955000, 0x00007f8887909000,
+0x00007f888790a000, 0x00007f88868e8000, 0x00007f888790a800, 0x00007f88868e9000,
+0x00007f88868e9800, 0x00007f88868ea800, 0x00007f888790b800, 0x00007f88868eb800,
+0x00007f888790c800, 0x00007f8885955800, 0x00007f888790d800, 0x00007f88868ec800,
+0x00007f88868ed000, 0x00007f88868ee000, 0x00007f88868ef000, 0x00007f88868f0000,
+0x00007f88868f0800, 0x00007f88868f1800, 0x00007f888790e000, 0x00007f888790f000,
+0x00007f8887910000, 0x00007f8887911000, 0x00007f8887911800, 0x00007f8887912800,
+0x00007f88868f2800, 0x00007f88868f3800, 0x00007f8875827000, 0x00007f88868f4000,
+0x00007f8887913800, 0x00007f8887914800, 0x00007f8887915000, 0x00007f8887916000,
+0x00007f8887917000, 0x00007f8887918000, 0x00007f8887918800, 0x00007f8885956800,
+0x00007f8887919800, 0x00007f888791a800, 0x00007f8885957800, 0x00007f8885958800,
+0x00007f8885959000, 0x00007f888595a000, 0x00007f888595b000, 0x00007f888595c000,
+0x00007f888595c800, 0x00007f888595d800, 0x00007f888595e800, 0x00007f888595f800,
+0x00007f8885960000, 0x00007f8885961000, 0x00007f8885962000, 0x00007f8885963000,
+0x00007f8885963800, 0x00007f888791b800, 0x00007f888791c000, 0x00007f88868f5000,
+0x00007f88868f6000, 0x00007f88868f7000, 0x00007f88868f7800, 0x00007f88868f8800,
+0x00007f8885964800, 0x00007f8885965800, 0x00007f88868f9800, 0x00007f88868fa800,
+0x00007f88868fb000, 0x00007f88868fc000, 0x00007f888611a000, 0x00007f888611b000,
+0x00007f888611c000, 0x00007f888611d000, 0x00007f888611d800, 0x00007f888611e800,
+0x00007f888611f800, 0x00007f8886120800, 0x00007f8875828000, 0x00007f8875829800,
+0x00007f8885945800, 0x00007f8885946800, 0x00007f8886121000, 0x00007f8886122000,
+0x00007f8886118000, 0x00007f887582a000, 0x00007f887582b000, 0x00007f8885968800,
+0x00007f8886119000, 0x00007f8886125000, 0x00007f8886126000, 0x00007f8886127000,
+0x00007f88868fd000, 0x00007f888791d000, 0x00007f888791e800, 0x00007f888791f000,
+0x00007f887582c000, 0x00007f8886127800, 0x00007f8886128800, 0x00007f88868fe000,
+0x00007f88868fe800, 0x00007f887582d000, 0x00007f884580b000, 0x00007f8886129800,
+0x00007f888612a800, 0x00007f888612b000, 0x00007f884580b800, 0x00007f8887920000,
+0x00007f8887921000, 0x00007f888612c000, 0x00007f888612d000, 0x00007f884580c800,
+0x00007f88868d9800, 0x00007f88868da800, 0x00007f8845808800, 0x00007f8845809000,
+0x00007f8845810000, 0x00007f8845811000, 0x00007f8845811800, 0x00007f8876008800,
+0x00007f8845812800, 0x00007f8886902800, 0x00007f885582b000, 0x00007f8887922000,
+0x00007f8886130000, 0x00007f8886130800, 0x00007f8845813800, 0x00007f8886131800,
+0x00007f8886903800, 0x00007f8887922800, 0x00007f8887923800, 0x00007f887580a800,
+0x00007f8886132800, 0x00007f8887895000, 0x00007f8886133800, 0x00007f8886134000,
+0x00007f8886135000, 0x00007f8886136000, 0x00007f8886904000, 0x00007f8887926800,
+0x00007f8876014800, 0x00007f8875830000, 0x00007f8886008800, 0x00007f8887924800
+}
+
+"Reference Handler" #2 daemon prio=10 os_prio=31 cpu=0.18ms elapsed=48.03s tid=0x00007f888682b000 nid=0x3c03 waiting on condition  [0x000000030528f000]
+   java.lang.Thread.State: RUNNABLE
+	at java.lang.ref.Reference.waitForReferencePendingList(java.base@11.0.13/Native Method)
+	at java.lang.ref.Reference.processPendingReferences(java.base@11.0.13/Reference.java:241)
+	at java.lang.ref.Reference$ReferenceHandler.run(java.base@11.0.13/Reference.java:213)
+
+"Finalizer" #3 daemon prio=8 os_prio=31 cpu=0.75ms elapsed=48.03s tid=0x00007f888602a800 nid=0x5503 in Object.wait()  [0x0000000305392000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(java.base@11.0.13/Native Method)
+	- waiting on <0x000000070ff09008> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(java.base@11.0.13/ReferenceQueue.java:155)
+	- waiting to re-lock in wait() <0x000000070ff09008> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(java.base@11.0.13/ReferenceQueue.java:176)
+	at java.lang.ref.Finalizer$FinalizerThread.run(java.base@11.0.13/Finalizer.java:170)
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=31 cpu=0.59ms elapsed=48.01s tid=0x00007f888602f000 nid=0x5a03 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Service Thread" #5 daemon prio=9 os_prio=31 cpu=0.04ms elapsed=48.01s tid=0x00007f888603b800 nid=0x9d03 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #6 daemon prio=9 os_prio=31 cpu=49.25ms elapsed=48.01s tid=0x00007f88858c4800 nid=0x9a03 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+"C1 CompilerThread0" #9 daemon prio=9 os_prio=31 cpu=56.87ms elapsed=48.01s tid=0x00007f888603c800 nid=0x5b03 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+   No compile task
+
+"Sweeper thread" #10 daemon prio=9 os_prio=31 cpu=0.08ms elapsed=48.01s tid=0x00007f888603d800 nid=0x5d03 runnable  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" #11 daemon prio=8 os_prio=31 cpu=0.11ms elapsed=47.96s tid=0x00007f888590c800 nid=0x9303 in Object.wait()  [0x0000000305ab5000]
+   java.lang.Thread.State: TIMED_WAITING (on object monitor)
+	at java.lang.Object.wait(java.base@11.0.13/Native Method)
+	- waiting on <0x000000070fe05650> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(java.base@11.0.13/ReferenceQueue.java:155)
+	- waiting to re-lock in wait() <0x000000070fe05650> (a java.lang.ref.ReferenceQueue$Lock)
+	at jdk.internal.ref.CleanerImpl.run(java.base@11.0.13/CleanerImpl.java:148)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+	at jdk.internal.misc.InnocuousThread.run(java.base@11.0.13/InnocuousThread.java:134)
+
+"Monitor Ctrl-Break" #12 daemon prio=5 os_prio=31 cpu=28.30ms elapsed=47.86s tid=0x00007f8886114800 nid=0x9103 runnable  [0x0000000305bb8000]
+   java.lang.Thread.State: RUNNABLE
+	at java.net.SocketInputStream.socketRead0(java.base@11.0.13/Native Method)
+	at java.net.SocketInputStream.socketRead(java.base@11.0.13/SocketInputStream.java:115)
+	at java.net.SocketInputStream.read(java.base@11.0.13/SocketInputStream.java:168)
+	at java.net.SocketInputStream.read(java.base@11.0.13/SocketInputStream.java:140)
+	at sun.nio.cs.StreamDecoder.readBytes(java.base@11.0.13/StreamDecoder.java:284)
+	at sun.nio.cs.StreamDecoder.implRead(java.base@11.0.13/StreamDecoder.java:326)
+	at sun.nio.cs.StreamDecoder.read(java.base@11.0.13/StreamDecoder.java:178)
+	- locked <0x000000070fb7be00> (a java.io.InputStreamReader)
+	at java.io.InputStreamReader.read(java.base@11.0.13/InputStreamReader.java:181)
+	at java.io.BufferedReader.fill(java.base@11.0.13/BufferedReader.java:161)
+	at java.io.BufferedReader.readLine(java.base@11.0.13/BufferedReader.java:326)
+	- locked <0x000000070fb7be00> (a java.io.InputStreamReader)
+	at java.io.BufferedReader.readLine(java.base@11.0.13/BufferedReader.java:392)
+	at com.intellij.rt.execution.application.AppMainV2$1.run(AppMainV2.java:49)
+
+"Thread-1" #14 prio=5 os_prio=31 cpu=0.21ms elapsed=47.85s tid=0x00007f88868d8000 nid=0x6a03 waiting for monitor entry  [0x0000000305ec1000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-2" #15 prio=5 os_prio=31 cpu=0.22ms elapsed=47.85s tid=0x00007f88868d8800 nid=0x6b03 waiting for monitor entry  [0x0000000305fc4000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-3" #16 prio=5 os_prio=31 cpu=0.26ms elapsed=47.85s tid=0x00007f88878f6800 nid=0x8703 waiting for monitor entry  [0x00000003060c7000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-4" #17 prio=5 os_prio=31 cpu=0.21ms elapsed=47.85s tid=0x00007f88878f7000 nid=0x8403 waiting for monitor entry  [0x00000003061ca000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:21)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	- locked <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-11" #24 prio=5 os_prio=31 cpu=0.14ms elapsed=47.85s tid=0x00007f88878fb800 nid=0x7303 waiting for monitor entry  [0x00000003068df000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:21)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	- locked <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-12" #25 prio=5 os_prio=31 cpu=0.12ms elapsed=47.85s tid=0x00007f8885948800 nid=0x15403 waiting for monitor entry  [0x00000003069e2000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-13" #26 prio=5 os_prio=31 cpu=0.07ms elapsed=47.85s tid=0x00007f88878fc800 nid=0xad03 waiting for monitor entry  [0x0000000306ae5000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-14" #27 prio=5 os_prio=31 cpu=0.06ms elapsed=47.85s tid=0x00007f8885949000 nid=0xae03 waiting for monitor entry  [0x0000000306be8000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-15" #28 prio=5 os_prio=31 cpu=0.08ms elapsed=47.85s tid=0x00007f888594a000 nid=0x14c03 waiting for monitor entry  [0x0000000306ceb000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-16" #29 prio=5 os_prio=31 cpu=0.11ms elapsed=47.85s tid=0x00007f888594b000 nid=0x14903 waiting for monitor entry  [0x0000000306dee000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-17" #30 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f8875823800 nid=0x7e07 waiting for monitor entry  [0x0000000305dbe000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-18" #31 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f8885944000 nid=0x7f07 waiting for monitor entry  [0x00000003062cd000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-19" #32 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f8885947800 nid=0x14a07 waiting for monitor entry  [0x00000003063d0000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-20" #33 prio=5 os_prio=31 cpu=0.07ms elapsed=47.84s tid=0x00007f888594c000 nid=0x7a07 waiting for monitor entry  [0x00000003064d3000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-21" #34 prio=5 os_prio=31 cpu=0.06ms elapsed=47.84s tid=0x00007f88868db800 nid=0x7207 waiting for monitor entry  [0x00000003065d6000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-22" #35 prio=5 os_prio=31 cpu=0.08ms elapsed=47.84s tid=0x00007f88868dc800 nid=0x6d07 waiting for monitor entry  [0x00000003066d9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-23" #36 prio=5 os_prio=31 cpu=0.06ms elapsed=47.84s tid=0x00007f88878f8000 nid=0x8e07 waiting for monitor entry  [0x00000003067dc000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-24" #37 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f8875824800 nid=0x7907 waiting for monitor entry  [0x0000000306ef1000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-25" #38 prio=5 os_prio=31 cpu=0.06ms elapsed=47.84s tid=0x00007f88878f9000 nid=0x7b07 waiting for monitor entry  [0x0000000306ff4000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-26" #39 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f88878fa000 nid=0x6f07 waiting for monitor entry  [0x00000003070f7000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-27" #40 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f88868dd800 nid=0xb503 waiting for monitor entry  [0x00000003071fa000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-28" #41 prio=5 os_prio=31 cpu=0.08ms elapsed=47.84s tid=0x00007f88868de800 nid=0xb703 waiting for monitor entry  [0x00000003072fd000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-29" #42 prio=5 os_prio=31 cpu=0.07ms elapsed=47.84s tid=0x00007f88868df000 nid=0x14403 waiting for monitor entry  [0x0000000307400000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-30" #43 prio=5 os_prio=31 cpu=0.06ms elapsed=47.84s tid=0x00007f888594c800 nid=0xba03 waiting for monitor entry  [0x0000000307503000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-31" #44 prio=5 os_prio=31 cpu=0.08ms elapsed=47.84s tid=0x00007f888594d800 nid=0x14203 waiting for monitor entry  [0x0000000307606000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-32" #45 prio=5 os_prio=31 cpu=0.12ms elapsed=47.84s tid=0x00007f888594e800 nid=0xbd03 waiting for monitor entry  [0x0000000307709000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-33" #46 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f88878fa800 nid=0x13e03 waiting for monitor entry  [0x000000030780c000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-34" #47 prio=5 os_prio=31 cpu=0.07ms elapsed=47.84s tid=0x00007f88878ff800 nid=0xc003 waiting for monitor entry  [0x000000030790f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-35" #48 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f8887900000 nid=0xc203 waiting for monitor entry  [0x0000000307a12000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-36" #49 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f8887901000 nid=0xc503 waiting for monitor entry  [0x0000000307b15000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-37" #50 prio=5 os_prio=31 cpu=0.08ms elapsed=47.84s tid=0x00007f8887902000 nid=0xc803 waiting for monitor entry  [0x0000000307c18000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-38" #51 prio=5 os_prio=31 cpu=0.06ms elapsed=47.84s tid=0x00007f8887903000 nid=0x13b03 waiting for monitor entry  [0x0000000307d1b000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-39" #52 prio=5 os_prio=31 cpu=0.07ms elapsed=47.84s tid=0x00007f8875825800 nid=0x13803 waiting for monitor entry  [0x0000000307e1e000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-40" #53 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f88868e0000 nid=0x13603 waiting for monitor entry  [0x0000000307f21000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-41" #54 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f8887903800 nid=0xcd03 waiting for monitor entry  [0x0000000308024000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-42" #55 prio=5 os_prio=31 cpu=0.12ms elapsed=47.84s tid=0x00007f8887904800 nid=0x13303 waiting for monitor entry  [0x0000000308127000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-43" #56 prio=5 os_prio=31 cpu=0.12ms elapsed=47.84s tid=0x00007f8887905800 nid=0x13103 waiting for monitor entry  [0x000000030822a000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-44" #57 prio=5 os_prio=31 cpu=0.12ms elapsed=47.84s tid=0x00007f8887906800 nid=0x12e03 waiting for monitor entry  [0x000000030832d000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-45" #58 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f88868e1000 nid=0xd103 waiting for monitor entry  [0x0000000308430000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-46" #59 prio=5 os_prio=31 cpu=0.13ms elapsed=47.84s tid=0x00007f88868e2000 nid=0x12b03 waiting for monitor entry  [0x0000000308533000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-47" #60 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f88868e2800 nid=0x12803 waiting for monitor entry  [0x0000000308636000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-48" #61 prio=5 os_prio=31 cpu=0.12ms elapsed=47.84s tid=0x00007f88868e3800 nid=0x12503 waiting for monitor entry  [0x0000000308739000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-49" #62 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f88868e4800 nid=0x12203 waiting for monitor entry  [0x000000030883c000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-50" #63 prio=5 os_prio=31 cpu=0.14ms elapsed=47.84s tid=0x00007f88868e5800 nid=0xd303 waiting for monitor entry  [0x000000030893f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-51" #64 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f8875826800 nid=0xd503 waiting for monitor entry  [0x0000000308a42000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-52" #65 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f8887907000 nid=0x11c03 waiting for monitor entry  [0x0000000308b45000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-53" #66 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f8887908000 nid=0xd703 waiting for monitor entry  [0x0000000308c48000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-54" #67 prio=5 os_prio=31 cpu=0.08ms elapsed=47.84s tid=0x00007f8885951800 nid=0xda03 waiting for monitor entry  [0x0000000308d4b000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-55" #68 prio=5 os_prio=31 cpu=0.15ms elapsed=47.84s tid=0x00007f8885952000 nid=0x11803 waiting for monitor entry  [0x0000000308e4e000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-56" #69 prio=5 os_prio=31 cpu=0.12ms elapsed=47.84s tid=0x00007f8885953000 nid=0xdb0f waiting for monitor entry  [0x0000000308f51000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-57" #70 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f88868e6000 nid=0xdf03 waiting for monitor entry  [0x0000000309054000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-58" #71 prio=5 os_prio=31 cpu=0.08ms elapsed=47.84s tid=0x00007f8885954000 nid=0xe007 waiting for monitor entry  [0x0000000309157000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-59" #72 prio=5 os_prio=31 cpu=0.07ms elapsed=47.84s tid=0x00007f88868e7000 nid=0xe303 waiting for monitor entry  [0x000000030925a000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-60" #73 prio=5 os_prio=31 cpu=0.08ms elapsed=47.84s tid=0x00007f8885955000 nid=0xe603 waiting for monitor entry  [0x000000030935d000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-61" #74 prio=5 os_prio=31 cpu=0.18ms elapsed=47.84s tid=0x00007f8887909000 nid=0x11303 waiting for monitor entry  [0x0000000309460000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-62" #75 prio=5 os_prio=31 cpu=0.08ms elapsed=47.84s tid=0x00007f888790a000 nid=0x11003 waiting for monitor entry  [0x0000000309563000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-63" #76 prio=5 os_prio=31 cpu=0.08ms elapsed=47.84s tid=0x00007f88868e8000 nid=0x10e03 waiting for monitor entry  [0x0000000309666000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-64" #77 prio=5 os_prio=31 cpu=0.19ms elapsed=47.84s tid=0x00007f888790a800 nid=0x10c03 waiting for monitor entry  [0x0000000309769000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-65" #78 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f88868e9000 nid=0xed03 waiting for monitor entry  [0x000000030986c000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-66" #79 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f88868e9800 nid=0x10a03 waiting for monitor entry  [0x000000030996f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-67" #80 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f88868ea800 nid=0x10803 waiting for monitor entry  [0x0000000309a72000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-68" #81 prio=5 os_prio=31 cpu=0.07ms elapsed=47.84s tid=0x00007f888790b800 nid=0x10703 waiting for monitor entry  [0x0000000309b75000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-69" #82 prio=5 os_prio=31 cpu=0.15ms elapsed=47.84s tid=0x00007f88868eb800 nid=0xf303 waiting for monitor entry  [0x0000000309c78000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-70" #83 prio=5 os_prio=31 cpu=0.27ms elapsed=47.84s tid=0x00007f888790c800 nid=0x10307 waiting for monitor entry  [0x0000000309d7b000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-71" #84 prio=5 os_prio=31 cpu=0.14ms elapsed=47.84s tid=0x00007f8885955800 nid=0xf503 waiting for monitor entry  [0x0000000309e7e000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-72" #85 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f888790d800 nid=0xff07 waiting for monitor entry  [0x0000000309f81000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-73" #86 prio=5 os_prio=31 cpu=0.13ms elapsed=47.84s tid=0x00007f88868ec800 nid=0xfd03 waiting for monitor entry  [0x000000030a084000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-74" #87 prio=5 os_prio=31 cpu=0.12ms elapsed=47.84s tid=0x00007f88868ed000 nid=0xfc03 waiting for monitor entry  [0x000000030a187000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-75" #88 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f88868ee000 nid=0x15603 waiting for monitor entry  [0x000000030a28a000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-76" #89 prio=5 os_prio=31 cpu=0.12ms elapsed=47.84s tid=0x00007f88868ef000 nid=0x15803 waiting for monitor entry  [0x000000030a38d000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-77" #90 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f88868f0000 nid=0x15b03 waiting for monitor entry  [0x000000030a490000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-78" #91 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f88868f0800 nid=0x2a603 waiting for monitor entry  [0x000000030a593000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-79" #92 prio=5 os_prio=31 cpu=0.08ms elapsed=47.84s tid=0x00007f88868f1800 nid=0x2a507 waiting for monitor entry  [0x000000030a696000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-80" #93 prio=5 os_prio=31 cpu=0.13ms elapsed=47.84s tid=0x00007f888790e000 nid=0x2a203 waiting for monitor entry  [0x000000030a799000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-81" #94 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f888790f000 nid=0x15f03 waiting for monitor entry  [0x000000030a89c000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-82" #95 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f8887910000 nid=0x2a003 waiting for monitor entry  [0x000000030a99f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-83" #96 prio=5 os_prio=31 cpu=0.13ms elapsed=47.84s tid=0x00007f8887911000 nid=0x16303 waiting for monitor entry  [0x000000030aaa2000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-84" #97 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f8887911800 nid=0x29e03 waiting for monitor entry  [0x000000030aba5000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-85" #98 prio=5 os_prio=31 cpu=0.18ms elapsed=47.84s tid=0x00007f8887912800 nid=0x29d03 waiting for monitor entry  [0x000000030aca8000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-86" #99 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f88868f2800 nid=0x29b03 waiting for monitor entry  [0x000000030adab000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-87" #100 prio=5 os_prio=31 cpu=0.18ms elapsed=47.84s tid=0x00007f88868f3800 nid=0x16a03 waiting for monitor entry  [0x000000030aeae000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-88" #101 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f8875827000 nid=0x29803 waiting for monitor entry  [0x000000030afb1000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-89" #102 prio=5 os_prio=31 cpu=0.14ms elapsed=47.84s tid=0x00007f88868f4000 nid=0x29503 waiting for monitor entry  [0x000000030b0b4000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-90" #103 prio=5 os_prio=31 cpu=0.13ms elapsed=47.84s tid=0x00007f8887913800 nid=0x16e03 waiting for monitor entry  [0x000000030b1b7000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-91" #104 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f8887914800 nid=0x29203 waiting for monitor entry  [0x000000030b2ba000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-92" #105 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f8887915000 nid=0x29107 waiting for monitor entry  [0x000000030b3bd000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-93" #106 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f8887916000 nid=0x28d03 waiting for monitor entry  [0x000000030b4c0000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-94" #107 prio=5 os_prio=31 cpu=0.12ms elapsed=47.84s tid=0x00007f8887917000 nid=0x17103 waiting for monitor entry  [0x000000030b5c3000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-95" #108 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f8887918000 nid=0x28b03 waiting for monitor entry  [0x000000030b6c6000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-96" #109 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f8887918800 nid=0x28903 waiting for monitor entry  [0x000000030b7c9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-97" #110 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f8885956800 nid=0x17703 waiting for monitor entry  [0x000000030b8cc000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-98" #111 prio=5 os_prio=31 cpu=0.09ms elapsed=47.84s tid=0x00007f8887919800 nid=0x28603 waiting for monitor entry  [0x000000030b9cf000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-99" #112 prio=5 os_prio=31 cpu=0.15ms elapsed=47.84s tid=0x00007f888791a800 nid=0x28403 waiting for monitor entry  [0x000000030bad2000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-100" #113 prio=5 os_prio=31 cpu=0.13ms elapsed=47.84s tid=0x00007f8885957800 nid=0x28103 waiting for monitor entry  [0x000000030bbd5000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-101" #114 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f8885958800 nid=0x27f03 waiting for monitor entry  [0x000000030bcd8000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-102" #115 prio=5 os_prio=31 cpu=0.14ms elapsed=47.84s tid=0x00007f8885959000 nid=0x27d03 waiting for monitor entry  [0x000000030bddb000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-103" #116 prio=5 os_prio=31 cpu=0.14ms elapsed=47.84s tid=0x00007f888595a000 nid=0x27a03 waiting for monitor entry  [0x000000030bede000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-104" #117 prio=5 os_prio=31 cpu=0.16ms elapsed=47.84s tid=0x00007f888595b000 nid=0x27803 waiting for monitor entry  [0x000000030bfe1000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-105" #118 prio=5 os_prio=31 cpu=0.13ms elapsed=47.84s tid=0x00007f888595c000 nid=0x27703 waiting for monitor entry  [0x000000030c0e4000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-106" #119 prio=5 os_prio=31 cpu=0.20ms elapsed=47.84s tid=0x00007f888595c800 nid=0x27603 waiting for monitor entry  [0x000000030c1e7000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-107" #120 prio=5 os_prio=31 cpu=0.15ms elapsed=47.84s tid=0x00007f888595d800 nid=0x27303 waiting for monitor entry  [0x000000030c2ea000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-108" #121 prio=5 os_prio=31 cpu=0.14ms elapsed=47.84s tid=0x00007f888595e800 nid=0x18303 waiting for monitor entry  [0x000000030c3ed000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-109" #122 prio=5 os_prio=31 cpu=0.10ms elapsed=47.84s tid=0x00007f888595f800 nid=0x18503 waiting for monitor entry  [0x000000030c4f0000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-110" #123 prio=5 os_prio=31 cpu=0.11ms elapsed=47.84s tid=0x00007f8885960000 nid=0x18603 waiting for monitor entry  [0x000000030c5f3000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-111" #124 prio=5 os_prio=31 cpu=0.13ms elapsed=47.84s tid=0x00007f8885961000 nid=0x26d03 waiting for monitor entry  [0x000000030c6f6000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-112" #125 prio=5 os_prio=31 cpu=0.18ms elapsed=47.84s tid=0x00007f8885962000 nid=0x26a03 waiting for monitor entry  [0x000000030c7f9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-113" #126 prio=5 os_prio=31 cpu=0.16ms elapsed=47.84s tid=0x00007f8885963000 nid=0x26703 waiting for monitor entry  [0x000000030c8fc000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-114" #127 prio=5 os_prio=31 cpu=0.14ms elapsed=47.83s tid=0x00007f8885963800 nid=0x26503 waiting for monitor entry  [0x000000030c9ff000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-115" #128 prio=5 os_prio=31 cpu=0.13ms elapsed=47.83s tid=0x00007f888791b800 nid=0x18a03 waiting for monitor entry  [0x000000030cb02000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-116" #129 prio=5 os_prio=31 cpu=0.12ms elapsed=47.83s tid=0x00007f888791c000 nid=0x26403 waiting for monitor entry  [0x000000030cc05000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-117" #130 prio=5 os_prio=31 cpu=0.14ms elapsed=47.83s tid=0x00007f88868f5000 nid=0x26203 waiting for monitor entry  [0x000000030cd08000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-118" #131 prio=5 os_prio=31 cpu=0.14ms elapsed=47.83s tid=0x00007f88868f6000 nid=0x26003 waiting for monitor entry  [0x000000030ce0b000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-119" #132 prio=5 os_prio=31 cpu=0.10ms elapsed=47.83s tid=0x00007f88868f7000 nid=0x25e03 waiting for monitor entry  [0x000000030cf0e000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-120" #133 prio=5 os_prio=31 cpu=0.13ms elapsed=47.83s tid=0x00007f88868f7800 nid=0x19203 waiting for monitor entry  [0x000000030d011000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-121" #134 prio=5 os_prio=31 cpu=0.10ms elapsed=47.83s tid=0x00007f88868f8800 nid=0x25c03 waiting for monitor entry  [0x000000030d114000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-122" #135 prio=5 os_prio=31 cpu=0.15ms elapsed=47.83s tid=0x00007f8885964800 nid=0x25903 waiting for monitor entry  [0x000000030d217000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-123" #136 prio=5 os_prio=31 cpu=0.10ms elapsed=47.83s tid=0x00007f8885965800 nid=0x25803 waiting for monitor entry  [0x000000030d31a000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-124" #137 prio=5 os_prio=31 cpu=0.20ms elapsed=47.83s tid=0x00007f88868f9800 nid=0x19703 waiting for monitor entry  [0x000000030d41d000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-125" #138 prio=5 os_prio=31 cpu=0.15ms elapsed=47.83s tid=0x00007f88868fa800 nid=0x19a03 waiting for monitor entry  [0x000000030d520000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-126" #139 prio=5 os_prio=31 cpu=0.10ms elapsed=47.83s tid=0x00007f88868fb000 nid=0x25503 waiting for monitor entry  [0x000000030d623000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-127" #140 prio=5 os_prio=31 cpu=0.10ms elapsed=47.83s tid=0x00007f88868fc000 nid=0x19d03 waiting for monitor entry  [0x000000030d726000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-128" #141 prio=5 os_prio=31 cpu=0.10ms elapsed=47.83s tid=0x00007f888611a000 nid=0x1a003 waiting for monitor entry  [0x000000030d829000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-129" #142 prio=5 os_prio=31 cpu=0.09ms elapsed=47.83s tid=0x00007f888611b000 nid=0x25203 waiting for monitor entry  [0x000000030d92c000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-130" #143 prio=5 os_prio=31 cpu=0.10ms elapsed=47.83s tid=0x00007f888611c000 nid=0x25103 waiting for monitor entry  [0x000000030da2f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-131" #144 prio=5 os_prio=31 cpu=0.13ms elapsed=47.83s tid=0x00007f888611d000 nid=0x1a503 waiting for monitor entry  [0x000000030db32000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-132" #145 prio=5 os_prio=31 cpu=0.10ms elapsed=47.83s tid=0x00007f888611d800 nid=0x24e03 waiting for monitor entry  [0x000000030dc35000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-133" #146 prio=5 os_prio=31 cpu=0.09ms elapsed=47.83s tid=0x00007f888611e800 nid=0x24c03 waiting for monitor entry  [0x000000030dd38000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-134" #147 prio=5 os_prio=31 cpu=0.09ms elapsed=47.83s tid=0x00007f888611f800 nid=0x1a803 waiting for monitor entry  [0x000000030de3b000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-135" #148 prio=5 os_prio=31 cpu=0.14ms elapsed=47.83s tid=0x00007f8886120800 nid=0x1ab03 waiting for monitor entry  [0x000000030df3e000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-136" #149 prio=5 os_prio=31 cpu=0.17ms elapsed=47.83s tid=0x00007f8875828000 nid=0x1ae03 waiting for monitor entry  [0x000000030e041000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-137" #150 prio=5 os_prio=31 cpu=0.16ms elapsed=47.83s tid=0x00007f8875829800 nid=0x1b003 waiting for monitor entry  [0x000000030e144000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-138" #151 prio=5 os_prio=31 cpu=0.11ms elapsed=47.83s tid=0x00007f8885945800 nid=0x24703 waiting for monitor entry  [0x000000030e247000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-139" #152 prio=5 os_prio=31 cpu=0.11ms elapsed=47.83s tid=0x00007f8885946800 nid=0x24503 waiting for monitor entry  [0x000000030e34a000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-140" #153 prio=5 os_prio=31 cpu=0.17ms elapsed=47.83s tid=0x00007f8886121000 nid=0x1b303 waiting for monitor entry  [0x000000030e44d000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-141" #154 prio=5 os_prio=31 cpu=0.15ms elapsed=47.83s tid=0x00007f8886122000 nid=0x24103 waiting for monitor entry  [0x000000030e550000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-142" #155 prio=5 os_prio=31 cpu=0.11ms elapsed=47.83s tid=0x00007f8886118000 nid=0x23f03 waiting for monitor entry  [0x000000030e653000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-143" #156 prio=5 os_prio=31 cpu=0.18ms elapsed=47.83s tid=0x00007f887582a000 nid=0x23d03 waiting for monitor entry  [0x000000030e756000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-144" #157 prio=5 os_prio=31 cpu=0.13ms elapsed=47.83s tid=0x00007f887582b000 nid=0x23a03 waiting for monitor entry  [0x000000030e859000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-145" #158 prio=5 os_prio=31 cpu=0.14ms elapsed=47.83s tid=0x00007f8885968800 nid=0x1b803 waiting for monitor entry  [0x000000030e95c000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-146" #159 prio=5 os_prio=31 cpu=0.10ms elapsed=47.83s tid=0x00007f8886119000 nid=0x23603 waiting for monitor entry  [0x000000030ea5f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-147" #160 prio=5 os_prio=31 cpu=0.10ms elapsed=47.83s tid=0x00007f8886125000 nid=0x1ba03 waiting for monitor entry  [0x000000030eb62000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-148" #161 prio=5 os_prio=31 cpu=0.11ms elapsed=47.83s tid=0x00007f8886126000 nid=0x1bc03 waiting for monitor entry  [0x000000030ec65000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-149" #162 prio=5 os_prio=31 cpu=0.14ms elapsed=47.83s tid=0x00007f8886127000 nid=0x23203 waiting for monitor entry  [0x000000030ed68000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-150" #163 prio=5 os_prio=31 cpu=0.13ms elapsed=47.83s tid=0x00007f88868fd000 nid=0x23103 waiting for monitor entry  [0x000000030ee6b000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-151" #164 prio=5 os_prio=31 cpu=0.16ms elapsed=47.83s tid=0x00007f888791d000 nid=0x23003 waiting for monitor entry  [0x000000030ef6e000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-152" #165 prio=5 os_prio=31 cpu=0.14ms elapsed=47.83s tid=0x00007f888791e800 nid=0x22d03 waiting for monitor entry  [0x000000030f071000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-153" #166 prio=5 os_prio=31 cpu=0.20ms elapsed=47.83s tid=0x00007f888791f000 nid=0x1c203 waiting for monitor entry  [0x000000030f174000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-154" #167 prio=5 os_prio=31 cpu=0.14ms elapsed=47.83s tid=0x00007f887582c000 nid=0x1c403 waiting for monitor entry  [0x000000030f277000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-155" #168 prio=5 os_prio=31 cpu=0.12ms elapsed=47.83s tid=0x00007f8886127800 nid=0x1c603 waiting for monitor entry  [0x000000030f37a000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-156" #169 prio=5 os_prio=31 cpu=0.18ms elapsed=47.83s tid=0x00007f8886128800 nid=0x22703 waiting for monitor entry  [0x000000030f47d000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-157" #170 prio=5 os_prio=31 cpu=0.13ms elapsed=47.83s tid=0x00007f88868fe000 nid=0x22503 waiting for monitor entry  [0x000000030f580000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-158" #171 prio=5 os_prio=31 cpu=0.14ms elapsed=47.83s tid=0x00007f88868fe800 nid=0x22303 waiting for monitor entry  [0x000000030f683000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-159" #172 prio=5 os_prio=31 cpu=0.20ms elapsed=47.83s tid=0x00007f887582d000 nid=0x22103 waiting for monitor entry  [0x000000030f786000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-160" #173 prio=5 os_prio=31 cpu=0.14ms elapsed=47.83s tid=0x00007f884580b000 nid=0x21f03 waiting for monitor entry  [0x000000030f889000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-161" #174 prio=5 os_prio=31 cpu=0.15ms elapsed=47.83s tid=0x00007f8886129800 nid=0x1cd03 waiting for monitor entry  [0x000000030f98c000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-162" #175 prio=5 os_prio=31 cpu=0.13ms elapsed=47.83s tid=0x00007f888612a800 nid=0x1cf03 waiting for monitor entry  [0x000000030fa8f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-163" #176 prio=5 os_prio=31 cpu=0.22ms elapsed=47.83s tid=0x00007f888612b000 nid=0x21c03 waiting for monitor entry  [0x000000030fb92000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-164" #177 prio=5 os_prio=31 cpu=0.18ms elapsed=47.83s tid=0x00007f884580b800 nid=0x21b03 waiting for monitor entry  [0x000000030fc95000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-165" #178 prio=5 os_prio=31 cpu=0.21ms elapsed=47.83s tid=0x00007f8887920000 nid=0x1d403 waiting for monitor entry  [0x000000030fd98000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-166" #179 prio=5 os_prio=31 cpu=0.20ms elapsed=47.83s tid=0x00007f8887921000 nid=0x1d503 waiting for monitor entry  [0x000000030fe9b000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-167" #180 prio=5 os_prio=31 cpu=0.19ms elapsed=47.83s tid=0x00007f888612c000 nid=0x21503 waiting for monitor entry  [0x000000030ff9e000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-168" #181 prio=5 os_prio=31 cpu=0.23ms elapsed=47.83s tid=0x00007f888612d000 nid=0x1d803 waiting for monitor entry  [0x00000003100a1000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-169" #182 prio=5 os_prio=31 cpu=0.17ms elapsed=47.82s tid=0x00007f884580c800 nid=0x21303 waiting for monitor entry  [0x00000003101a4000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-170" #183 prio=5 os_prio=31 cpu=0.20ms elapsed=47.82s tid=0x00007f88868d9800 nid=0x1dd03 waiting for monitor entry  [0x00000003102a7000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-171" #184 prio=5 os_prio=31 cpu=0.21ms elapsed=47.82s tid=0x00007f88868da800 nid=0x21103 waiting for monitor entry  [0x00000003103aa000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-172" #185 prio=5 os_prio=31 cpu=0.20ms elapsed=47.82s tid=0x00007f8845808800 nid=0x1e003 waiting for monitor entry  [0x00000003104ad000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-173" #186 prio=5 os_prio=31 cpu=0.18ms elapsed=47.82s tid=0x00007f8845809000 nid=0x20f03 waiting for monitor entry  [0x00000003105b0000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-174" #187 prio=5 os_prio=31 cpu=0.18ms elapsed=47.82s tid=0x00007f8845810000 nid=0x1e303 waiting for monitor entry  [0x00000003106b3000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-175" #188 prio=5 os_prio=31 cpu=0.18ms elapsed=47.82s tid=0x00007f8845811000 nid=0x20b03 waiting for monitor entry  [0x00000003107b6000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-176" #189 prio=5 os_prio=31 cpu=0.19ms elapsed=47.82s tid=0x00007f8845811800 nid=0x20803 waiting for monitor entry  [0x00000003108b9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-177" #190 prio=5 os_prio=31 cpu=0.16ms elapsed=47.82s tid=0x00007f8876008800 nid=0x1e603 waiting for monitor entry  [0x00000003109bc000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-178" #191 prio=5 os_prio=31 cpu=0.22ms elapsed=47.82s tid=0x00007f8845812800 nid=0x1e903 waiting for monitor entry  [0x0000000310abf000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-179" #192 prio=5 os_prio=31 cpu=0.19ms elapsed=47.82s tid=0x00007f8886902800 nid=0x20503 waiting for monitor entry  [0x0000000310bc2000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-180" #193 prio=5 os_prio=31 cpu=0.18ms elapsed=47.82s tid=0x00007f885582b000 nid=0x1eb07 waiting for monitor entry  [0x0000000310cc5000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-181" #194 prio=5 os_prio=31 cpu=0.14ms elapsed=47.82s tid=0x00007f8887922000 nid=0x1ed03 waiting for monitor entry  [0x0000000310dc8000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-182" #195 prio=5 os_prio=31 cpu=0.14ms elapsed=47.82s tid=0x00007f8886130000 nid=0x1ef03 waiting for monitor entry  [0x0000000310ecb000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-183" #196 prio=5 os_prio=31 cpu=0.23ms elapsed=47.82s tid=0x00007f8886130800 nid=0x1ff03 waiting for monitor entry  [0x0000000310fce000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-184" #197 prio=5 os_prio=31 cpu=0.19ms elapsed=47.82s tid=0x00007f8845813800 nid=0x1f103 waiting for monitor entry  [0x00000003110d1000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-185" #198 prio=5 os_prio=31 cpu=0.14ms elapsed=47.82s tid=0x00007f8886131800 nid=0x1fb03 waiting for monitor entry  [0x00000003111d4000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-186" #199 prio=5 os_prio=31 cpu=0.12ms elapsed=47.82s tid=0x00007f8886903800 nid=0x1f803 waiting for monitor entry  [0x00000003112d7000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-187" #200 prio=5 os_prio=31 cpu=0.16ms elapsed=47.82s tid=0x00007f8887922800 nid=0x1f703 waiting for monitor entry  [0x00000003113da000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-188" #201 prio=5 os_prio=31 cpu=0.20ms elapsed=47.82s tid=0x00007f8887923800 nid=0x55403 waiting for monitor entry  [0x00000003114dd000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-189" #202 prio=5 os_prio=31 cpu=0.14ms elapsed=47.82s tid=0x00007f887580a800 nid=0x55203 waiting for monitor entry  [0x00000003115e0000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-190" #203 prio=5 os_prio=31 cpu=0.15ms elapsed=47.82s tid=0x00007f8886132800 nid=0x54f03 waiting for monitor entry  [0x00000003116e3000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-191" #204 prio=5 os_prio=31 cpu=0.16ms elapsed=47.82s tid=0x00007f8887895000 nid=0x2ad03 waiting for monitor entry  [0x00000003117e6000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-192" #205 prio=5 os_prio=31 cpu=0.16ms elapsed=47.82s tid=0x00007f8886133800 nid=0x2af03 waiting for monitor entry  [0x00000003118e9000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-193" #206 prio=5 os_prio=31 cpu=0.16ms elapsed=47.82s tid=0x00007f8886134000 nid=0x2b103 waiting for monitor entry  [0x00000003119ec000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-194" #207 prio=5 os_prio=31 cpu=0.16ms elapsed=47.82s tid=0x00007f8886135000 nid=0x2b203 waiting for monitor entry  [0x0000000311aef000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-195" #208 prio=5 os_prio=31 cpu=0.17ms elapsed=47.82s tid=0x00007f8886136000 nid=0x2b303 waiting for monitor entry  [0x0000000311bf2000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-196" #209 prio=5 os_prio=31 cpu=0.16ms elapsed=47.82s tid=0x00007f8886904000 nid=0x54503 waiting for monitor entry  [0x0000000311cf5000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-197" #210 prio=5 os_prio=31 cpu=0.16ms elapsed=47.82s tid=0x00007f8887926800 nid=0x54403 waiting for monitor entry  [0x0000000311df8000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-198" #211 prio=5 os_prio=31 cpu=0.13ms elapsed=47.82s tid=0x00007f8876014800 nid=0x2b703 waiting for monitor entry  [0x0000000311efb000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"Thread-199" #212 prio=5 os_prio=31 cpu=0.13ms elapsed=47.82s tid=0x00007f8875830000 nid=0x2b803 waiting for monitor entry  [0x0000000311ffe000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+"DestroyJavaVM" #213 prio=5 os_prio=31 cpu=190.90ms elapsed=47.82s tid=0x00007f8886008800 nid=0x2003 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" #214 daemon prio=9 os_prio=31 cpu=33.45ms elapsed=43.81s tid=0x00007f8887924800 nid=0x2bb03 waiting on condition  [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"VM Thread" os_prio=31 cpu=9.04ms elapsed=48.04s tid=0x00007f8886029800 nid=0x4003 runnable  
+
+"GC Thread#0" os_prio=31 cpu=13.83ms elapsed=48.05s tid=0x00007f8887818800 nid=0x4b03 runnable  
+
+"G1 Main Marker" os_prio=31 cpu=0.53ms elapsed=48.05s tid=0x00007f888784d800 nid=0x4903 runnable  
+
+"G1 Conc#0" os_prio=31 cpu=0.03ms elapsed=48.05s tid=0x00007f888784e000 nid=0x3303 runnable  
+
+"G1 Refine#0" os_prio=31 cpu=0.46ms elapsed=48.05s tid=0x00007f888588f000 nid=0x3403 runnable  
+
+"G1 Young RemSet Sampling" os_prio=31 cpu=8.03ms elapsed=48.05s tid=0x00007f8875809000 nid=0x3503 runnable  
+"VM Periodic Task Thread" os_prio=31 cpu=45.79ms elapsed=47.86s tid=0x00007f8885943000 nid=0x8f4f waiting on condition  
+
+JNI global refs: 19, weak refs: 0
+
+
+Found one Java-level deadlock:
+=============================
+"Thread-1":
+  waiting to lock monitor 0x00007f8868157e00 (object 0x000000070ff202c8, a java.lang.Integer),
+  which is held by "Thread-11"
+"Thread-11":
+  waiting to lock monitor 0x00007f8868157f00 (object 0x000000070ff202b8, a java.lang.Integer),
+  which is held by "Thread-4"
+"Thread-4":
+  waiting to lock monitor 0x00007f8868157e00 (object 0x000000070ff202c8, a java.lang.Integer),
+  which is held by "Thread-11"
+
+Java stack information for the threads listed above:
+===================================================
+"Thread-1":
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:20)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+"Thread-11":
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:21)
+	- waiting to lock <0x000000070ff202b8> (a java.lang.Integer)
+	- locked <0x000000070ff202c8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+"Thread-4":
+	at no4_3_2.DeadLockTest$SynAddRunalbe.run(DeadLockTest.java:21)
+	- waiting to lock <0x000000070ff202c8> (a java.lang.Integer)
+	- locked <0x000000070ff202b8> (a java.lang.Integer)
+	at java.lang.Thread.run(java.base@11.0.13/Thread.java:829)
+
+Found 1 deadlock.
+

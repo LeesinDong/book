@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>depth-java</artifactId>
+    <artifactId>java-concurrent</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
