@@ -7,13 +7,13 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author Leesin Dong
- * @since 2021/11/3
+ * @since 2021/11/4
  */
-public class DelegatingVehicleTracker {
+public class PublishingVehicleTracker {
     private final ConcurrentHashMap<String, SafePoint> locations;
     private final Map<String, SafePoint> unmodifiableMap;
 
-    public DelegatingVehicleTracker(Map<String, SafePoint> points) {
+    public PublishingVehicleTracker(Map<String, SafePoint> points) {
         this.locations = new ConcurrentHashMap<>(points);
         this.unmodifiableMap = Collections.unmodifiableMap(locations);
     }
@@ -34,20 +34,7 @@ public class DelegatingVehicleTracker {
     }
 
     public void replace(String id, int x, int y) {
-        locations.replace(id, new SafePoint(x, y));
-    }
-
-    private static class SafePoint {
-        public SafePoint(SafePoint p) {
-            this.x = p.x;
-            this.y = p.y;
-        }
-
-        public SafePoint(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-
-        private final int x, y;
+        // locations.replace(id, new SafePoint(x, y));
+        locations.get(id).set(x, y);
     }
 }
