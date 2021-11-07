@@ -16,34 +16,41 @@ public class Test {
             @SneakyThrows
             @Override
             public void run() {
-                for (int i = 0; i < 1000; i++) {
+                for (int i = 0; i < 2; i++) {
                     System.out.println("1234");
-                    Thread.sleep(1000);
+                    // Thread.sleep(1000);
                 }
             }
         });
 
-        Future<Object> submit = executor.submit(new Callable<Object>() {
+        // boolean b = executor.awaitTermination(10000, TimeUnit.SECONDS);
+        // System.out.println(b);
 
-            @Override
-            public Object call() throws Exception {
-                return null;
-            }
-        });
+        Thread.sleep(5000);
+        boolean terminated = executor.isTerminated();
+        System.out.println(terminated);
 
-        Future<?> submit1 = executor.submit(new Runnable() {
-            @Override
-            public void run() {
-
-            }
-        });
-
-        Future<?> submit2 = executor.submit(new FutureTask(new Callable() {
-            @Override
-            public Object call() throws Exception {
-                return null;
-            }
-        }));
+        // Future<Object> submit = executor.submit(new Callable<Object>() {
+        //
+        //     @Override
+        //     public Object call() throws Exception {
+        //         return null;
+        //     }
+        // });
+        //
+        // Future<?> submit1 = executor.submit(new Runnable() {
+        //     @Override
+        //     public void run() {
+        //
+        //     }
+        // });
+        //
+        // Future<?> submit2 = executor.submit(new FutureTask(new Callable() {
+        //     @Override
+        //     public Object call() throws Exception {
+        //         return null;
+        //     }
+        // }));
 
         // Thread.sleep(2000);
         // executor.shutdownNow();
