@@ -28,6 +28,7 @@ public class TimedRun {
             submit.get(10, TimeUnit.SECONDS);
         } catch (InterruptedException e) {
             System.out.println("cancel");
+
             submit.cancel(true);
         } catch (ExecutionException e) {
             // e.printStackTrace();
