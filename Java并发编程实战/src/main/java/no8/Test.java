@@ -2,9 +2,9 @@ package no8;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
+
+import static java.util.concurrent.Executors.newCachedThreadPool;
 
 /**
  * @author Leesin Dong
@@ -21,6 +21,19 @@ public class Test {
                 new LinkedBlockingQueue<>(),
                 new ThreadFactoryBuilder().setNameFormat("Thread-%d").build());
         threadPoolExecutor.setRejectedExecutionHandler(new ThreadPoolExecutor.AbortPolicy());
+    }
 
+    @org.junit.Test
+    public void test1() throws ExecutionException, InterruptedException {
+        Future<?> future = newCachedThreadPool().submit(() -> {
+            try {
+                Thread.sleep(5000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        });
+
+        future.get();
+        System.out.println(1234);
     }
 }
