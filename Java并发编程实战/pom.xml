@@ -37,5 +37,11 @@
             <artifactId>jcip-annotations</artifactId>
             <version>1.0</version>
         </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>23.0</version>
+        </dependency>
     </dependencies>
 </project>

@@ -26,4 +26,19 @@ public class missThread {
         boolean interrupted = Thread.interrupted();
         System.out.println(interrupted);
     }
+
+    @Test
+    public void joinTest() throws InterruptedException {
+        Thread thread = new Thread(() -> {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println("1234");
+        });
+        thread.start();
+        thread.join(500);
+        System.out.println("结束");
+    }
 }
