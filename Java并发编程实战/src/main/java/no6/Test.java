@@ -18,17 +18,17 @@ public class Test {
             public void run() {
                 for (int i = 0; i < 2; i++) {
                     System.out.println("1234");
-                    // Thread.sleep(1000);
+                    Thread.sleep(1000);
                 }
             }
         });
 
-        // boolean b = executor.awaitTermination(10000, TimeUnit.SECONDS);
-        // System.out.println(b);
+        boolean b = executor.awaitTermination(100, TimeUnit.MILLISECONDS);
+        System.out.println(b);
 
-        Thread.sleep(5000);
-        boolean terminated = executor.isTerminated();
-        System.out.println(terminated);
+        // Thread.sleep(5000);
+        // boolean terminated = executor.isTerminated();
+        // System.out.println(terminated);
 
         // Future<Object> submit = executor.submit(new Callable<Object>() {
         //

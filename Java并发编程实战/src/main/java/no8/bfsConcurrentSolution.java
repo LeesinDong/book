@@ -26,6 +26,7 @@ public class bfsConcurrentSolution {
         } finally {
             main.shutdown();
         }
+        return null;
     }
 
     private class SolutionTask implements Runnable {
