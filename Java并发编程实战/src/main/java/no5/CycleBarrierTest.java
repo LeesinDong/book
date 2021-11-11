@@ -28,5 +28,18 @@ public class CycleBarrierTest {
                 }
             }).start();
         }
+
+        for (int i = 0; i < 3; i++) {
+            new Thread(() -> {
+                System.out.println("任务开始");
+                try {
+                    cyclicBarrier.await();
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                } catch (BrokenBarrierException e) {
+                    e.printStackTrace();
+                }
+            }).start();
+        }
     }
 }

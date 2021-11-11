@@ -49,7 +49,7 @@ public class SegementMap {
     @Data
     @Builder
     @AllArgsConstructor
-    private class Node {
+    private static class Node {
         private Node next;
         private Object key;
         private Object value;
