@@ -22,9 +22,9 @@ public class Test {
         vector.add(2);
         vector.add(3);
         vector.add(4);
-        // for (Integer integer : list) {
-        //     list.remove(integer);
-        // }
+        for (Integer integer : list) {
+            list.remove(integer);
+        }
 
         // Iterator<Integer> iterator = list.iterator();
         // while (iterator.hasNext()) {

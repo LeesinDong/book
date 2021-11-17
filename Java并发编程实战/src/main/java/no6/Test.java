@@ -23,12 +23,12 @@ public class Test {
             }
         });
 
-        boolean b = executor.awaitTermination(100, TimeUnit.MILLISECONDS);
-        System.out.println(b);
+        // boolean b = executor.awaitTermination(100, TimeUnit.MILLISECONDS);
+        // System.out.println(b);
 
         // Thread.sleep(5000);
-        // boolean terminated = executor.isTerminated();
-        // System.out.println(terminated);
+        boolean terminated = executor.isTerminated();
+        System.out.println(terminated);
 
         // Future<Object> submit = executor.submit(new Callable<Object>() {
         //
