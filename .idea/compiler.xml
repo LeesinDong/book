@@ -8,11 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Java8实战第2版" />
-        <module name="深入理解java虚拟机第三版" />
+        <module name="Java性能优化权威指南" />
         <module name="阿里巴巴java开发手册" />
         <module name="EffectiveJava" />
-        <module name="Java并发编程实战" />
         <module name="CleanCode" />
+        <module name="深入理解java虚拟机第三版" />
+        <module name="Java并发编程实战" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="9" />
