@@ -16,6 +16,7 @@
         <module>Java8实战第2版</module>
         <module>深入理解java虚拟机第三版</module>
         <module>Java并发编程实战</module>
+        <module>Java性能优化权威指南</module>
     </modules>
 
     <properties>
