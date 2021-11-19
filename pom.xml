@@ -17,6 +17,7 @@
         <module>深入理解java虚拟机第三版</module>
         <module>Java并发编程实战</module>
         <module>Java性能优化权威指南</module>
+        <module>Java程序性能优化</module>
     </modules>
 
     <properties>

@@ -14,6 +14,7 @@
         <module name="CleanCode" />
         <module name="深入理解java虚拟机第三版" />
         <module name="Java并发编程实战" />
+        <module name="Java程序性能优化" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="9" />
