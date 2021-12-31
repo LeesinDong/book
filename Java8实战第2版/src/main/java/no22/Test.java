@@ -1,4 +1,4 @@
-package no12;
+package no22;
 
 import java.time.*;
 import java.time.chrono.JapaneseDate;

@@ -18,6 +18,10 @@
         <module>Java并发编程实战</module>
         <module>Java性能优化权威指南</module>
         <module>Java程序性能优化</module>
+        <module>高性能MySQL</module>
+        <module>MySQL必知必会</module>
+        <module>MyBatis从入门到精通</module>
+        <module>重学Java设计模式</module>
     </modules>
 
     <properties>
